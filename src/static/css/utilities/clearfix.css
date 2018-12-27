@@ -1,0 +1,12 @@
+/* ==========================================================================
+   #CLEARFIX
+   ========================================================================== */
+/**
+ * Attach our clearfix mixin to a utility class.
+ */
+.u-clearfix:after {
+  content: "" !important;
+  display: block !important;
+  clear: both !important; }
+
+/*# sourceMappingURL=clearfix.css.map */

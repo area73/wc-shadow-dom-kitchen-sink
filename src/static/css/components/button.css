@@ -1,0 +1,96 @@
+/* ==========================================================================
+   #BUTTONS
+   ========================================================================== */
+/**
+ * This is an example component. Extend inuitcss by building your own components
+ * that make up your UI. Component classes are prefixed with a `c-`.
+ */
+/**
+ * 1. Allow us to style box model properties.
+ * 2. Line different sized buttons up a little nicer.
+ * 3. Make buttons inherit font styles (often necessary when styling `input`s as
+ *    buttons).
+ * 4. Reset/normalize some styles.
+ * 5. Force all button-styled elements to appear clickable.
+ */
+.c-btn {
+  display: inline-block;
+  /* [1] */
+  vertical-align: middle;
+  /* [2] */
+  font: inherit;
+  /* [3] */
+  text-align: center;
+  /* [4] */
+  margin: 0;
+  /* [4] */
+  cursor: pointer;
+  /* [5] */
+  padding: 12px 24px;
+  transition: all 300ms ease-in-out;
+  border-radius: 3px; }
+
+/* Style variants
+   ========================================================================== */
+.c-btn--primary {
+  background-color: #4a8ec2; }
+  .c-btn--primary, .c-btn--primary:hover, .c-btn--primary:active, .c-btn--primary:focus {
+    text-decoration: none;
+    /* [4] */
+    color: #fff; }
+  .c-btn--primary:hover, .c-btn--primary:focus {
+    background-color: #3774a2; }
+
+.c-btn--secondary {
+  background-color: #2f4054; }
+  .c-btn--secondary, .c-btn--secondary:hover, .c-btn--secondary:active, .c-btn--secondary:focus {
+    text-decoration: none;
+    color: #fff; }
+  .c-btn--secondary:hover, .c-btn--secondary:focus {
+    background-color: #1d2733; }
+
+.c-btn--tertiary {
+  background-color: #fff;
+  color: #4a8ec2; }
+  .c-btn--tertiary, .c-btn--tertiary:hover, .c-btn--tertiary:active, .c-btn--tertiary:focus {
+    text-decoration: none;
+    color: #4a8ec2; }
+  .c-btn--tertiary:hover, .c-btn--tertiary:focus {
+    color: #3774a2; }
+
+/* Size variants
+   ========================================================================== */
+.c-btn--small {
+  padding: 6px 12px; }
+
+.c-btn--large {
+  padding: 24px 48px; }
+
+/* Ghost buttons
+   ========================================================================== */
+/**
+ * Ghost buttons have see-through backgrounds and are bordered.
+ */
+.c-btn--ghost {
+  border: 2px solid currentColor;
+  padding: 10px 22px; }
+  .c-btn--ghost, .c-btn--ghost:hover, .c-btn--ghost:active, .c-btn--ghost:focus {
+    background: none; }
+  .c-btn--ghost.c-btn--small {
+    padding: 4px 10px; }
+  .c-btn--ghost.c-btn--large {
+    padding: 22px 46px; }
+  .c-btn--ghost.c-btn--primary {
+    color: #4a8ec2; }
+    .c-btn--ghost.c-btn--primary:hover, .c-btn--ghost.c-btn--primary:focus {
+      color: #3774a2; }
+  .c-btn--ghost.c-btn--secondary {
+    color: #2f4054; }
+    .c-btn--ghost.c-btn--secondary:hover, .c-btn--ghost.c-btn--secondary:focus {
+      color: #1d2733; }
+  .c-btn--ghost.c-btn--tertiary {
+    color: #fff; }
+    .c-btn--ghost.c-btn--tertiary:hover, .c-btn--ghost.c-btn--tertiary:focus {
+      color: #fff; }
+
+/*# sourceMappingURL=button.css.map */

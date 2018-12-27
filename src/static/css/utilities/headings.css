@@ -1,0 +1,80 @@
+/* ==========================================================================
+   #HEADINGS
+   ========================================================================== */
+/**
+ * Simple default styles for headings 1 through 6. Anything more opinionated
+ * than simple font-size changes should likely be applied via classes (see:
+ * http://csswizardry.com/2016/02/managing-typography-on-large-apps/).
+ */
+h1 {
+  font-size: 36px;
+  font-size: 2.25rem;
+  line-height: 1.1666666667; }
+
+h2 {
+  font-size: 28px;
+  font-size: 1.75rem;
+  line-height: 1.2857142857; }
+
+h3 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1.25; }
+
+h4 {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.5; }
+
+h5 {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.3333333333; }
+
+h6 {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5; }
+
+/* ==========================================================================
+   #HEADINGS
+   ========================================================================== */
+/**
+ * Redefine all of our basic heading styles against utility classes so as to
+ * allow for double stranded heading hierarchy, e.g. we semantically need an H2,
+ * but we want it to be sized like an H1:
+ *
+ *   <h2 class="u-h1"></h2>
+ *
+ */
+.u-h1 {
+  font-size: 36px !important;
+  font-size: 2.25rem !important;
+  line-height: 1.1666666667 !important; }
+
+.u-h2 {
+  font-size: 28px !important;
+  font-size: 1.75rem !important;
+  line-height: 1.2857142857 !important; }
+
+.u-h3 {
+  font-size: 24px !important;
+  font-size: 1.5rem !important;
+  line-height: 1.25 !important; }
+
+.u-h4 {
+  font-size: 20px !important;
+  font-size: 1.25rem !important;
+  line-height: 1.5 !important; }
+
+.u-h5 {
+  font-size: 18px !important;
+  font-size: 1.125rem !important;
+  line-height: 1.3333333333 !important; }
+
+.u-h6 {
+  font-size: 16px !important;
+  font-size: 1rem !important;
+  line-height: 1.5 !important; }
+
+/*# sourceMappingURL=headings.css.map */

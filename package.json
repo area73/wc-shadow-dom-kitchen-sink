@@ -1,0 +1,47 @@
+{
+  "name": "wc-shadow-dom-kitchen-sink",
+  "version": "1.0.0",
+  "description": "Kitchen sin for WebComponents (lit-HTML & litElement) with ShadowDOM",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "test.js",
+    "start": "webpack-dev-server --open --color --hot",
+    "build": "webpack"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/area73/wc-shadow-dom-kitchen-sink.git"
+  },
+  "keywords": [
+    "lithtml",
+    "litelement",
+    "webcomponents",
+    "shadow",
+    "DOM"
+  ],
+  "author": "Rodrigo Erades <rerades@siete3.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/area73/wc-shadow-dom-kitchen-sink/issues"
+  },
+  "homepage": "https://github.com/area73/wc-shadow-dom-kitchen-sink#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "babel-loader": "^8.0.4",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.28.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.13"
+  },
+  "dependencies": {
+    "@polymer/lit-element": "^0.6.5",
+    "lit-redux-router": "^0.4.0",
+    "pwa-helpers": "^0.9.0",
+    "redux": "^4.0.1",
+    "wc-jss": "^0.3.0"
+  }
+}

@@ -1,0 +1,38 @@
+/* ==========================================================================
+   #BLOCK
+   ========================================================================== */
+/**
+ * Stacked image-with-text object. A simple abstraction to cover a very commonly
+ * occurring design pattern.
+ */
+.o-block {
+  display: block;
+  text-align: center; }
+
+.o-block__img {
+  margin-bottom: 24px;
+  /* Size variants
+     ====================================================================== */ }
+  .o-block--flush > .o-block__img {
+    margin-bottom: 0; }
+  .o-block--tiny > .o-block__img {
+    margin-bottom: 6px; }
+  .o-block--small > .o-block__img {
+    margin-bottom: 12px; }
+  .o-block--large > .o-block__img {
+    margin-bottom: 48px; }
+  .o-block--huge > .o-block__img {
+    margin-bottom: 96px; }
+
+.o-block__body {
+  display: block; }
+
+/* Alignment variants
+   ========================================================================== */
+.o-block--right {
+  text-align: right; }
+
+.o-block--left {
+  text-align: left; }
+
+/*# sourceMappingURL=block.css.map */
