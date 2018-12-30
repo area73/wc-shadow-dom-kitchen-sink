@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slotted Pages</title>
+  <link href="../static/css/all.css" rel="stylesheet" type="text/css">
+  <style>
+    a {color:red;}
+  </style>
+</head>
+<body>
+<div class="o-wrapper">
+  <h1>Working with slotted components</h1>
+  <p>When we work with slots , the sloted HTML will not be inside shadow Root and there fore
+    styling will need to be apply from the outside</p>
+  <p>In this example we have a webcomponent call wc-nav-bar.</p>
+  <p>The WC has a menu define inside the web component and a slot to place arbitrary html from
+    parent</p>
+  <p> The problem that we are facing is that using the exact same markup, any thing that is inside
+    the slot will not be styled with custom component styles</p>
+  <p>No matter how deep is your slote inside the WC that it will be place outside the shadow
+    root of the WC, so you may spect unwanted style issues</p>
+
+  <div class="wc-container">
+    <wc-nav-bar>
+      <nav class="nav-bar">
+        <a href="/">home</a>
+        <a href="/products/1/shirt">products</a>
+        <a href="/about">about</a>
+        <a href="/contact">contact</a>
+        <a href="/counter/28">counter</a>
+        <a href="/not-exist">not exist</a>
+      </nav>
+    </wc-nav-bar>
+  </div>
+</div>
+
+
+<script src="../bundle.js" type="text/javascript"></script>
+</body>
+</html>
