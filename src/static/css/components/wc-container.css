@@ -1,3 +1,4 @@
 .wc-container {
-    /*background-color: aliceblue;*/
+    background-color: aliceblue;
+    border: 2px dashed grey;
 }

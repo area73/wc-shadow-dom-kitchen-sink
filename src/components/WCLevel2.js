@@ -11,16 +11,21 @@ class WCLevel2 extends LitElement {
   /**
    * Haking shadowDOM original method initialize()
    */
+
   initialize() {
     this.renderRoot = this;
     this._saveInstanceProperties();
   }
 
+
   render() {
     return html`
-     WC-LEVEL 2
-     <hr>  
-     <wc-level3></wc-level3>           
+     WC-LEVEL 2 [NO SHADOW]
+     <br>
+      <div class="c-btn c-btn--primary">c-btn c-btn--primary</div>
+      <div class="wc-container">
+        <wc-level3></wc-level3>
+      </div>            
     `;
   }
 

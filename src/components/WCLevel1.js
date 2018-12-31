@@ -17,9 +17,12 @@ class WCLevel1 extends LitElement {
 
   render() {
     return html`
-     WC-LEVEL 1
-     <hr> 
-     <wc-level2></wc-level2>            
+     WC-LEVEL 1 [NO SHADOW]
+      <br>
+      <div class="c-btn c-btn--primary">c-btn c-btn--primary</div>
+      <div class="wc-container">
+        <wc-level2></wc-level2>
+      </div> 
     `;
   }
 
