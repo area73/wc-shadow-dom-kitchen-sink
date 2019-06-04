@@ -10,6 +10,7 @@ class WCLevel1 extends LitElement {
   /**
    * Haking shadowDOM original method initialize()
    */
+
   initialize() {
     this.renderRoot = this;
     this._saveInstanceProperties();

@@ -9,6 +9,7 @@ class WCContainer extends LitElement {
     };
   }
 
+
   static get styles() {
     return html`
       <style>
@@ -71,7 +72,6 @@ class WCContainer extends LitElement {
       </div>
       <div class="wc-container">
         <wc-level1>
-          <div class="c-btn c-btn--primary">c-btn c-btn--primary</div>
         </wc-level1>
       </div>
     `;

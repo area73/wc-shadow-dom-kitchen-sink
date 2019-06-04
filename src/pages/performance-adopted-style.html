@@ -3,8 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Rendering & Performance</title>
-  <style>
-    /**
+</head>
+<body>
+
+
+
+
+<script>
+
+
+  const allCss = `/**
      * A very simple reset that sits on top of Normalize.css.
      */
     :host,
@@ -547,24 +555,28 @@
       animation-name: example;
       animation-duration: 4s;
       animation-iteration-count: infinite;
-    }
-  </style>
-</head>
-<body>
-<script>
+    }`;
+
+
+  // Adopted StyleSheets
+  // we add to the document to use inside our component
+  const everythingTomato = new CSSStyleSheet();
+  everythingTomato.replace(allCss);
+  document.adoptedStyleSheets = [everythingTomato];
+
+
   var t0 = performance.now();
   const iterations = 10000;
   let output = '';
   for (let i = 0; i < iterations; i++) {
-    output += '<wc-animated-icon-no-shadow></wc-animated-icon-no-shadow>'
+    output += '<wc-animated-icon-adopted-style></wc-animated-icon-adopted-style>'
   }
   var t1 = performance.now();
   console.log(`time to do a loop of ${iterations}: ${t1-t0}`);
   document.write(output);
   var t2 = performance.now();
-  console.log(`time to do a document write : ${t2-t1}`);
+    console.log(`time to do a document write : ${t2-t1}`);
 </script>
-
 
 
 <script src="../bundle.js" type="text/javascript"></script>

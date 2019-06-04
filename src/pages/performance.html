@@ -5,12 +5,21 @@
   <title>Rendering & Performance</title>
 </head>
 <body>
+
+
 <script>
+
+  var t0 = performance.now();
+  const iterations = 10000;
   let output = '';
-  for (let i = 0; i < 10000; i++) {
+  for (let i = 0; i < iterations; i++) {
     output += '<wc-animated-icon></wc-animated-icon>'
   }
+  var t1 = performance.now();
+  console.log(`time to do a loop of ${iterations}: ${t1-t0}`);
   document.write(output);
+  var t2 = performance.now();
+    console.log(`time to do a document write : ${t2-t1}`);
 </script>
 
 
